@@ -1,0 +1,31 @@
+{
+    "name":"Extensions Web Store for Fox",
+    "version":"1.0.0",
+    "description":"",
+    "permissions":[
+        "*://chrome.google.com/*",
+        "*://clients2.google.com/*",
+        "*://*.googleusercontent.com/*",
+        "management",
+        "storage"
+    ],
+    "manifest_version":2,
+    
+    "content_scripts":[
+        {
+            "matches":["*://chrome.google.com/webstore/*"],
+            "js":["lib/zip.min.js","cws.js"],
+            "css":["cws.css"]
+        }
+    ],
+    "web_accessible_resources":[
+        "lib/z-worker.js"
+    ],
+    "background":{
+        "page":"background.html"
+    },
+    "browser_action":{
+        "default_icon":"images/icon.png",
+        "default_popup":"popup/popup.html"
+    }
+}

@@ -1,0 +1,6 @@
+div[aria-labelledby="promo-header"][role="dialog"] {
+    display: none !important;
+}
+div[role="dialog"][aria-labelledby="promo-header"] {
+    display: none !important;
+}
