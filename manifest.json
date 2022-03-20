@@ -1,6 +1,6 @@
 {
     "name":"Extensions Web Store for Fox",
-    "version":"1.0.0",
+    "version":"1.0a1",
     "description":"",
     "permissions":[
         "*://chrome.google.com/*",
